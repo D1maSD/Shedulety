@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "date_start": "1705584800",
+        "date_finish": "1705588400",
+        "name": "First task",
+        "description": "Описание моего дела"
+    },
+    {
+        "id": 2,
+        "date_start": "1705484800",
+        "date_finish": "1705488400",
+        "name": "Second task",
+        "description": "Описание моего дела"
+    },
+    {
+        "id": 3,
+        "date_start": "1705384800",
+        "date_finish": "1705388400",
+        "name": "Third task",
+        "description": "Описание моего дела"
+    },
+    {
+        "id": 4,
+        "date_start": "1705284800",
+        "date_finish": "1705288400",
+        "name": "Four task",
+        "description": "Описание моего дела"
+    },
+    {
+        "id": 5,
+        "date_start": "1705184800",
+        "date_finish": "1705188400",
+        "name": "Five task",
+        "description": "Описание моего дела"
+    }
+]
