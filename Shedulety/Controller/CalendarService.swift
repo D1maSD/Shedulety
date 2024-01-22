@@ -33,7 +33,6 @@ class CalendarService: CalendarServiceProtocol {
     }
 
     init() {
-        RealmConfigurationManager.shared.configureRealm()
         requestAccessToCalendar()
         getDeskriptors()
     }

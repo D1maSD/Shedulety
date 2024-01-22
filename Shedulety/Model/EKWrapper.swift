@@ -103,26 +103,3 @@ public final class EKWrapper: EventDescriptor {
     textColor = .white
   }
 }
-import RealmSwift
-
-class RealmConfigurationManager {
-    static let shared = RealmConfigurationManager()
-
-    private init() {
-        configureRealm()
-    }
-
-    func configureRealm() {
-        let config = Realm.Configuration(
-            schemaVersion: 1,
-            migrationBlock: { migration, oldSchemaVersion in
-                if (oldSchemaVersion < 1) {
-                    migration.enumerateObjects(ofType: TaskObject.className()) { oldObject, newObject in
-                        newObject!["descriptionTask"] = ""
-                    }
-                }
-            })
-
-        Realm.Configuration.defaultConfiguration = config
-    }
-}

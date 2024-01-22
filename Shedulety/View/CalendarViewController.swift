@@ -41,14 +41,12 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
 
     var generatedEvents = [EventDescriptor]()
 
-    // запрашиваем доступ к календарю
     func requestAccessToCalendar() {
         eventStore.requestAccess(to: .event) { success, error in
 
         }
     }
 
-// we reload data when we get a new infromation from calendar
     @objc func storeChanged(_ notification: Notification) {
         DispatchQueue.main.async { [weak self] in
             self?.reloadData()
@@ -93,7 +91,6 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
         present(editingViewController, animated: true)
     }
 
-    //EKEventEditViewDelegate need to edit created events (on creating moment)
     func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction) {
             endEventEditing()
             if action != .canceled {
