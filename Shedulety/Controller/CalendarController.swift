@@ -15,7 +15,7 @@ protocol CalendarViewModelProtocol {
     var generatedEvents: [EventDescriptor] { get set }
 }
 
-class CalendarViewModel: CalendarViewModelProtocol {
+class CalendarController: CalendarViewModelProtocol {
 
     private let eventStore = EKEventStore()
     var generatedEvents = [EventDescriptor]()
@@ -27,7 +27,6 @@ class CalendarViewModel: CalendarViewModelProtocol {
     }
 
     init() {
-        print("25 .init CalendarViewModel")
         calendarService = CalendarService()
         generatedEvents = calendarService.generatedEvents
     }
@@ -35,5 +34,4 @@ class CalendarViewModel: CalendarViewModelProtocol {
     func saveTaskToRealm(taskObject: TaskObject) {
         calendarService.saveTaskToRealm(taskObject: taskObject)
     }
-
 }

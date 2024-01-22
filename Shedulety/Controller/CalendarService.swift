@@ -33,7 +33,6 @@ class CalendarService: CalendarServiceProtocol {
     }
 
     init() {
-        print("25 .init CalendarViewModel")
         RealmConfigurationManager.shared.configureRealm()
         requestAccessToCalendar()
         getDeskriptors()
@@ -42,11 +41,9 @@ class CalendarService: CalendarServiceProtocol {
     func getDeskriptors() {
         let realmTasks = getTasksFromRealm()
         if realmTasks.isEmpty {
-            print("26 .if realmTasks.isEmpty")
             parsingFromJsonTasks()
 
         } else {
-            print("26 .else realmTasks.isEmpty")
             recieveTasksFromRealm()
         }
     }
@@ -67,10 +64,7 @@ class CalendarService: CalendarServiceProtocol {
                     let ckEvent = EKWrapper(eventKitEvent: ekEvent, description: task.description)
                     return ckEvent
                 }
-                print("25 .getDeskriptors")
-                for event in calendarEvents {
-                    print("event startDate: \(event.startDate) endDate: \(event.endDate)")
-                }
+
                 generatedEvents.append(contentsOf: calendarEvents)
             } catch {
                 print("Error: \(error)")
@@ -135,7 +129,6 @@ class CalendarService: CalendarServiceProtocol {
     func getTasksFromRealm() -> [TaskObject] {
         do {
             let realm = try Realm()
-            print("realm.configuration.schemaVersion \(realm.configuration.schemaVersion)")
             return Array(realm.objects(TaskObject.self))
         } catch {
             print("Error retrieving tasks from Realm: \(error)")

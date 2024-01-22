@@ -14,7 +14,6 @@ import RealmSwift
 class CalendarViewController: DayViewController, EKEventEditViewDelegate {
 
 
-    //EKEventEditViewDelegate need to edit created events (on creating moment)
     private let eventStore = EKEventStore()
     var calendarViewModel: CalendarViewModelProtocol
     override func viewDidLoad() {
@@ -24,7 +23,7 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
         requestAccessToCalendar()
     }
 
-    init(calendarViewModel: CalendarViewModel) {
+    init(calendarViewModel: CalendarController) {
         self.calendarViewModel = calendarViewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -57,14 +56,10 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
     }
 
     override func eventsForDate(_ date: Date) -> [EventDescriptor] {
-        print("2: eventsForDate")
-
         return calendarViewModel.generatedEvents
     }
 
     override func dayViewDidSelectEventView(_ eventView: EventView) {
-        print("3: dayViewDidSelectEventView")
-        print("dayViewDidSelectEventView: \(eventView)")
         guard let ckEvent = eventView.descriptor as? EKWrapper else {
             return
         }
@@ -74,17 +69,13 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
     }
 
     override func dayView(dayView: DayView, didUpdate event: EventDescriptor) {
-        print("6: didUpdate")
         guard let editingEvent = event as? EKWrapper else { return }
         if let originalEvent = event.editedEvent {
             editingEvent.commitEditing()
-            print("6.1: didUpdate save")
             if originalEvent === editingEvent {
-                print("6.2: didUpdate save")
                 presentEditingViewForEvent(editingEvent.ekEvent)
 
             } else {
-                print("6.3: didUpdate save")
                 calendarViewModel.generatedEvents.append(editingEvent)
 
             }
@@ -95,7 +86,6 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
     }
 
     func presentEditingViewForEvent(_ ekEvent: EKEvent) {
-        print("8: presentEditingViewForEvent")
         let editingViewController = EKEventEditViewController()
         editingViewController.event = ekEvent
         editingViewController.editViewDelegate = self
@@ -105,15 +95,12 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
 
     //EKEventEditViewDelegate need to edit created events (on creating moment)
     func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction) {
-
-        print("7: eventEditViewController")
             endEventEditing()
             if action != .canceled {
 
                 if let ekEvent = controller.event {
                     let ekWrapper = EKWrapper(eventKitEvent: ekEvent, description: ekEvent.notes ?? "Notes")
                     ekWrapper.setEventDescription(ekWrapper.description)
-                    print("7: eventEditViewController append")
                     calendarViewModel.generatedEvents.append(ekWrapper)
                     // Добавляем событие в Realm
                     let taskObject = TaskObject()

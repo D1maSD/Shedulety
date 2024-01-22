@@ -43,10 +43,8 @@ open class EventView: UIView {
 
   public func updateWithDescriptor(event: EventDescriptor) {
     if let attributedText = event.attributedText {
-        print("55 .attributedText \(attributedText)")
       textView.attributedText = attributedText
     } else {
-        print("55 .event.text \(event.text)")
       textView.text = event.text
       textView.textColor = event.textColor
       textView.font = event.font

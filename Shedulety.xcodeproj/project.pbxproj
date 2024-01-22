@@ -56,7 +56,7 @@
 		A8716AB12B5D192E006BCF6E /* tasksTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = A8716AB02B5D192E006BCF6E /* tasksTwo.json */; };
 		A8716AB32B5D32D0006BCF6E /* TaskObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716AB22B5D32D0006BCF6E /* TaskObject.swift */; };
 		A89361082B5D63B30012C511 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89361072B5D63B30012C511 /* Task.swift */; };
-		A893610A2B5D643F0012C511 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89361092B5D643F0012C511 /* CalendarViewModel.swift */; };
+		A893610A2B5D643F0012C511 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89361092B5D643F0012C511 /* CalendarController.swift */; };
 		A89361122B5DC0170012C511 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89361112B5DC0170012C511 /* CalendarService.swift */; };
 /* End PBXBuildFile section */
 
@@ -127,7 +127,7 @@
 		A8716AB02B5D192E006BCF6E /* tasksTwo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasksTwo.json; sourceTree = "<group>"; };
 		A8716AB22B5D32D0006BCF6E /* TaskObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskObject.swift; sourceTree = "<group>"; };
 		A89361072B5D63B30012C511 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		A89361092B5D643F0012C511 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		A89361092B5D643F0012C511 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		A89361112B5DC0170012C511 /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
 		C36635D67530E46270941120 /* Pods-Shedulety-SheduletyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shedulety-SheduletyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Shedulety-SheduletyUITests/Pods-Shedulety-SheduletyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C49535E7CF6F6E950C826777 /* Pods-Shedulety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shedulety.release.xcconfig"; path = "Target Support Files/Pods-Shedulety/Pods-Shedulety.release.xcconfig"; sourceTree = "<group>"; };
@@ -316,7 +316,7 @@
 		A893610D2B5D74000012C511 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A89361092B5D643F0012C511 /* CalendarViewModel.swift */,
+				A89361092B5D643F0012C511 /* CalendarController.swift */,
 				A89361112B5DC0170012C511 /* CalendarService.swift */,
 			);
 			path = Controller;
@@ -542,7 +542,7 @@
 				A8716A2E2B5D13CB006BCF6E /* AppDelegate.swift in Sources */,
 				A8716A742B5D159E006BCF6E /* DaySelectorController.swift in Sources */,
 				A8716A7B2B5D17F6006BCF6E /* DayHeaderView.swift in Sources */,
-				A893610A2B5D643F0012C511 /* CalendarViewModel.swift in Sources */,
+				A893610A2B5D643F0012C511 /* CalendarController.swift in Sources */,
 				A8716A6B2B5D14E4006BCF6E /* Array+Shift.swift in Sources */,
 				A8716A9C2B5D187E006BCF6E /* TimelineContainer.swift in Sources */,
 				A8716A992B5D187D006BCF6E /* TimelineView.swift in Sources */,
