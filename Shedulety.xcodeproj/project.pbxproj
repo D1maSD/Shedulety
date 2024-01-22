@@ -7,15 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D6375CB7D29BDC308DD5FEC /* Pods_SheduletyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B7BAE7523DBE2E4E7995E /* Pods_SheduletyTests.framework */; };
+		3F96049D690F7F553CDD61B4 /* Pods_Shedulety.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96ACF523CE05C5B0B150B435 /* Pods_Shedulety.framework */; };
 		A8716A2E2B5D13CB006BCF6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A2D2B5D13CB006BCF6E /* AppDelegate.swift */; };
 		A8716A302B5D13CB006BCF6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A2F2B5D13CB006BCF6E /* SceneDelegate.swift */; };
-		A8716A322B5D13CB006BCF6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A312B5D13CB006BCF6E /* ViewController.swift */; };
-		A8716A352B5D13CB006BCF6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8716A332B5D13CB006BCF6E /* Main.storyboard */; };
+		A8716A322B5D13CB006BCF6E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A312B5D13CB006BCF6E /* CalendarViewController.swift */; };
 		A8716A372B5D13CE006BCF6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8716A362B5D13CE006BCF6E /* Assets.xcassets */; };
 		A8716A3A2B5D13CE006BCF6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8716A382B5D13CE006BCF6E /* LaunchScreen.storyboard */; };
 		A8716A452B5D13CF006BCF6E /* SheduletyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A442B5D13CF006BCF6E /* SheduletyTests.swift */; };
-		A8716A4F2B5D13CF006BCF6E /* SheduletyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A4E2B5D13CF006BCF6E /* SheduletyUITests.swift */; };
-		A8716A512B5D13CF006BCF6E /* SheduletyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A502B5D13CF006BCF6E /* SheduletyUITestsLaunchTests.swift */; };
+		A8716A672B5D14E4006BCF6E /* Value+Clamped.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A602B5D14E3006BCF6E /* Value+Clamped.swift */; };
+		A8716A682B5D14E4006BCF6E /* View+StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A612B5D14E3006BCF6E /* View+StackView.swift */; };
+		A8716A692B5D14E4006BCF6E /* EventDescriptor+DatePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A622B5D14E3006BCF6E /* EventDescriptor+DatePeriod.swift */; };
+		A8716A6A2B5D14E4006BCF6E /* Locale+24Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A632B5D14E4006BCF6E /* Locale+24Hour.swift */; };
+		A8716A6B2B5D14E4006BCF6E /* Array+Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A642B5D14E4006BCF6E /* Array+Shift.swift */; };
+		A8716A6C2B5D14E4006BCF6E /* Date+DateOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A652B5D14E4006BCF6E /* Date+DateOnly.swift */; };
+		A8716A6D2B5D14E4006BCF6E /* UIColor+SystemColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A662B5D14E4006BCF6E /* UIColor+SystemColors.swift */; };
+		A8716A742B5D159E006BCF6E /* DaySelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A702B5D159D006BCF6E /* DaySelectorController.swift */; };
+		A8716A752B5D159E006BCF6E /* DateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A712B5D159D006BCF6E /* DateLabel.swift */; };
+		A8716A762B5D159E006BCF6E /* DayDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A722B5D159D006BCF6E /* DayDateCell.swift */; };
+		A8716A772B5D159E006BCF6E /* DaySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A732B5D159E006BCF6E /* DaySelector.swift */; };
+		A8716A7B2B5D17F6006BCF6E /* DayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A782B5D17F5006BCF6E /* DayHeaderView.swift */; };
+		A8716A7C2B5D17F6006BCF6E /* DaySymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A792B5D17F5006BCF6E /* DaySymbolsView.swift */; };
+		A8716A7D2B5D17F6006BCF6E /* SwipeLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A7A2B5D17F6006BCF6E /* SwipeLabelView.swift */; };
+		A8716A8F2B5D187D006BCF6E /* CurrentTimeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A7F2B5D187A006BCF6E /* CurrentTimeIndicator.swift */; };
+		A8716A902B5D187D006BCF6E /* EventResizeHandleDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A802B5D187A006BCF6E /* EventResizeHandleDotView.swift */; };
+		A8716A912B5D187D006BCF6E /* EventEditingSnappingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A812B5D187A006BCF6E /* EventEditingSnappingBehavior.swift */; };
+		A8716A922B5D187D006BCF6E /* TimeStringsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A822B5D187B006BCF6E /* TimeStringsFactory.swift */; };
+		A8716A932B5D187D006BCF6E /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A832B5D187B006BCF6E /* EventView.swift */; };
+		A8716A942B5D187D006BCF6E /* SnapTo15MinuteIntervals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A842B5D187B006BCF6E /* SnapTo15MinuteIntervals.swift */; };
+		A8716A952B5D187D006BCF6E /* ReusePool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A852B5D187B006BCF6E /* ReusePool.swift */; };
+		A8716A962B5D187D006BCF6E /* EventDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A862B5D187B006BCF6E /* EventDescriptor.swift */; };
+		A8716A972B5D187D006BCF6E /* EventLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A872B5D187C006BCF6E /* EventLayoutAttributes.swift */; };
+		A8716A982B5D187D006BCF6E /* EventResizeHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A882B5D187C006BCF6E /* EventResizeHandleView.swift */; };
+		A8716A992B5D187D006BCF6E /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A892B5D187C006BCF6E /* TimelineView.swift */; };
+		A8716A9A2B5D187D006BCF6E /* AllDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A8A2B5D187C006BCF6E /* AllDayView.swift */; };
+		A8716A9B2B5D187D006BCF6E /* TimelineContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A8B2B5D187D006BCF6E /* TimelineContainerController.swift */; };
+		A8716A9C2B5D187E006BCF6E /* TimelineContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A8C2B5D187D006BCF6E /* TimelineContainer.swift */; };
+		A8716A9D2B5D187E006BCF6E /* TimelinePagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A8D2B5D187D006BCF6E /* TimelinePagerView.swift */; };
+		A8716A9E2B5D187E006BCF6E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716A8E2B5D187D006BCF6E /* Event.swift */; };
+		A8716AA62B5D18A7006BCF6E /* CalendarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716AA02B5D18A6006BCF6E /* CalendarStyle.swift */; };
+		A8716AA72B5D18A7006BCF6E /* EventDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716AA12B5D18A6006BCF6E /* EventDataSource.swift */; };
+		A8716AA82B5D18A7006BCF6E /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716AA22B5D18A6006BCF6E /* DayViewController.swift */; };
+		A8716AA92B5D18A7006BCF6E /* DayViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716AA32B5D18A7006BCF6E /* DayViewState.swift */; };
+		A8716AAA2B5D18A7006BCF6E /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716AA42B5D18A7006BCF6E /* Localization.swift */; };
+		A8716AAB2B5D18A7006BCF6E /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716AA52B5D18A7006BCF6E /* DayView.swift */; };
+		A8716AAD2B5D18BF006BCF6E /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716AAC2B5D18BF006BCF6E /* DatePickerController.swift */; };
+		A8716AAF2B5D190D006BCF6E /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716AAE2B5D190D006BCF6E /* EKWrapper.swift */; };
+		A8716AB12B5D192E006BCF6E /* tasksTwo.json in Resources */ = {isa = PBXBuildFile; fileRef = A8716AB02B5D192E006BCF6E /* tasksTwo.json */; };
+		A8716AB32B5D32D0006BCF6E /* TaskObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8716AB22B5D32D0006BCF6E /* TaskObject.swift */; };
+		A89361082B5D63B30012C511 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89361072B5D63B30012C511 /* Task.swift */; };
+		A893610A2B5D643F0012C511 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89361092B5D643F0012C511 /* CalendarViewModel.swift */; };
+		A89361122B5DC0170012C511 /* CalendarService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89361112B5DC0170012C511 /* CalendarService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,29 +68,72 @@
 			remoteGlobalIDString = A8716A292B5D13CB006BCF6E;
 			remoteInfo = Shedulety;
 		};
-		A8716A4B2B5D13CF006BCF6E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A8716A222B5D13CB006BCF6E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8716A292B5D13CB006BCF6E;
-			remoteInfo = Shedulety;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D1F592B2E3B693106585758 /* Pods-SheduletyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheduletyTests.debug.xcconfig"; path = "Target Support Files/Pods-SheduletyTests/Pods-SheduletyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EB3D0CD90EC233E67A00186 /* Pods_Shedulety_SheduletyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shedulety_SheduletyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CC42F3F225237C7FAA3C26 /* Pods-SheduletyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SheduletyTests.release.xcconfig"; path = "Target Support Files/Pods-SheduletyTests/Pods-SheduletyTests.release.xcconfig"; sourceTree = "<group>"; };
+		96ACF523CE05C5B0B150B435 /* Pods_Shedulety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shedulety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8716A2A2B5D13CB006BCF6E /* Shedulety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shedulety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8716A2D2B5D13CB006BCF6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8716A2F2B5D13CB006BCF6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8716A312B5D13CB006BCF6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A8716A342B5D13CB006BCF6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8716A312B5D13CB006BCF6E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A8716A362B5D13CE006BCF6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8716A392B5D13CE006BCF6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8716A3B2B5D13CE006BCF6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8716A402B5D13CF006BCF6E /* SheduletyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheduletyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8716A442B5D13CF006BCF6E /* SheduletyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheduletyTests.swift; sourceTree = "<group>"; };
-		A8716A4A2B5D13CF006BCF6E /* SheduletyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SheduletyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8716A4E2B5D13CF006BCF6E /* SheduletyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheduletyUITests.swift; sourceTree = "<group>"; };
 		A8716A502B5D13CF006BCF6E /* SheduletyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheduletyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8716A602B5D14E3006BCF6E /* Value+Clamped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Value+Clamped.swift"; sourceTree = "<group>"; };
+		A8716A612B5D14E3006BCF6E /* View+StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+StackView.swift"; sourceTree = "<group>"; };
+		A8716A622B5D14E3006BCF6E /* EventDescriptor+DatePeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EventDescriptor+DatePeriod.swift"; sourceTree = "<group>"; };
+		A8716A632B5D14E4006BCF6E /* Locale+24Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+24Hour.swift"; sourceTree = "<group>"; };
+		A8716A642B5D14E4006BCF6E /* Array+Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Shift.swift"; sourceTree = "<group>"; };
+		A8716A652B5D14E4006BCF6E /* Date+DateOnly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+DateOnly.swift"; sourceTree = "<group>"; };
+		A8716A662B5D14E4006BCF6E /* UIColor+SystemColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SystemColors.swift"; sourceTree = "<group>"; };
+		A8716A702B5D159D006BCF6E /* DaySelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySelectorController.swift; sourceTree = "<group>"; };
+		A8716A712B5D159D006BCF6E /* DateLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateLabel.swift; sourceTree = "<group>"; };
+		A8716A722B5D159D006BCF6E /* DayDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayDateCell.swift; sourceTree = "<group>"; };
+		A8716A732B5D159E006BCF6E /* DaySelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySelector.swift; sourceTree = "<group>"; };
+		A8716A782B5D17F5006BCF6E /* DayHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayHeaderView.swift; sourceTree = "<group>"; };
+		A8716A792B5D17F5006BCF6E /* DaySymbolsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySymbolsView.swift; sourceTree = "<group>"; };
+		A8716A7A2B5D17F6006BCF6E /* SwipeLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeLabelView.swift; sourceTree = "<group>"; };
+		A8716A7F2B5D187A006BCF6E /* CurrentTimeIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTimeIndicator.swift; sourceTree = "<group>"; };
+		A8716A802B5D187A006BCF6E /* EventResizeHandleDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventResizeHandleDotView.swift; sourceTree = "<group>"; };
+		A8716A812B5D187A006BCF6E /* EventEditingSnappingBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEditingSnappingBehavior.swift; sourceTree = "<group>"; };
+		A8716A822B5D187B006BCF6E /* TimeStringsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStringsFactory.swift; sourceTree = "<group>"; };
+		A8716A832B5D187B006BCF6E /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		A8716A842B5D187B006BCF6E /* SnapTo15MinuteIntervals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapTo15MinuteIntervals.swift; sourceTree = "<group>"; };
+		A8716A852B5D187B006BCF6E /* ReusePool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusePool.swift; sourceTree = "<group>"; };
+		A8716A862B5D187B006BCF6E /* EventDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDescriptor.swift; sourceTree = "<group>"; };
+		A8716A872B5D187C006BCF6E /* EventLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLayoutAttributes.swift; sourceTree = "<group>"; };
+		A8716A882B5D187C006BCF6E /* EventResizeHandleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventResizeHandleView.swift; sourceTree = "<group>"; };
+		A8716A892B5D187C006BCF6E /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		A8716A8A2B5D187C006BCF6E /* AllDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllDayView.swift; sourceTree = "<group>"; };
+		A8716A8B2B5D187D006BCF6E /* TimelineContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineContainerController.swift; sourceTree = "<group>"; };
+		A8716A8C2B5D187D006BCF6E /* TimelineContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineContainer.swift; sourceTree = "<group>"; };
+		A8716A8D2B5D187D006BCF6E /* TimelinePagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelinePagerView.swift; sourceTree = "<group>"; };
+		A8716A8E2B5D187D006BCF6E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		A8716AA02B5D18A6006BCF6E /* CalendarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarStyle.swift; sourceTree = "<group>"; };
+		A8716AA12B5D18A6006BCF6E /* EventDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDataSource.swift; sourceTree = "<group>"; };
+		A8716AA22B5D18A6006BCF6E /* DayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		A8716AA32B5D18A7006BCF6E /* DayViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayViewState.swift; sourceTree = "<group>"; };
+		A8716AA42B5D18A7006BCF6E /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		A8716AA52B5D18A7006BCF6E /* DayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		A8716AAC2B5D18BF006BCF6E /* DatePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerController.swift; sourceTree = "<group>"; };
+		A8716AAE2B5D190D006BCF6E /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
+		A8716AB02B5D192E006BCF6E /* tasksTwo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasksTwo.json; sourceTree = "<group>"; };
+		A8716AB22B5D32D0006BCF6E /* TaskObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskObject.swift; sourceTree = "<group>"; };
+		A89361072B5D63B30012C511 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A89361092B5D643F0012C511 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		A89361112B5DC0170012C511 /* CalendarService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarService.swift; sourceTree = "<group>"; };
+		C36635D67530E46270941120 /* Pods-Shedulety-SheduletyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shedulety-SheduletyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Shedulety-SheduletyUITests/Pods-Shedulety-SheduletyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C49535E7CF6F6E950C826777 /* Pods-Shedulety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shedulety.release.xcconfig"; path = "Target Support Files/Pods-Shedulety/Pods-Shedulety.release.xcconfig"; sourceTree = "<group>"; };
+		CDE7F91236293B5412BC2D71 /* Pods-Shedulety-SheduletyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shedulety-SheduletyUITests.release.xcconfig"; path = "Target Support Files/Pods-Shedulety-SheduletyUITests/Pods-Shedulety-SheduletyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DCBF5CFEBA30DF52572290A4 /* Pods-Shedulety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shedulety.debug.xcconfig"; path = "Target Support Files/Pods-Shedulety/Pods-Shedulety.debug.xcconfig"; sourceTree = "<group>"; };
+		E54B7BAE7523DBE2E4E7995E /* Pods_SheduletyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SheduletyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F96049D690F7F553CDD61B4 /* Pods_Shedulety.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,19 +149,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A8716A472B5D13CF006BCF6E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1D6375CB7D29BDC308DD5FEC /* Pods_SheduletyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F0757580FC8C35814EEEE39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCBF5CFEBA30DF52572290A4 /* Pods-Shedulety.debug.xcconfig */,
+				C49535E7CF6F6E950C826777 /* Pods-Shedulety.release.xcconfig */,
+				C36635D67530E46270941120 /* Pods-Shedulety-SheduletyUITests.debug.xcconfig */,
+				CDE7F91236293B5412BC2D71 /* Pods-Shedulety-SheduletyUITests.release.xcconfig */,
+				1D1F592B2E3B693106585758 /* Pods-SheduletyTests.debug.xcconfig */,
+				93CC42F3F225237C7FAA3C26 /* Pods-SheduletyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A8716A212B5D13CB006BCF6E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +176,8 @@
 				A8716A432B5D13CF006BCF6E /* SheduletyTests */,
 				A8716A4D2B5D13CF006BCF6E /* SheduletyUITests */,
 				A8716A2B2B5D13CB006BCF6E /* Products */,
+				6F0757580FC8C35814EEEE39 /* Pods */,
+				D45DFF22AAFC740837B820D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +186,6 @@
 			children = (
 				A8716A2A2B5D13CB006BCF6E /* Shedulety.app */,
 				A8716A402B5D13CF006BCF6E /* SheduletyTests.xctest */,
-				A8716A4A2B5D13CF006BCF6E /* SheduletyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,11 +195,13 @@
 			children = (
 				A8716A2D2B5D13CB006BCF6E /* AppDelegate.swift */,
 				A8716A2F2B5D13CB006BCF6E /* SceneDelegate.swift */,
-				A8716A312B5D13CB006BCF6E /* ViewController.swift */,
-				A8716A332B5D13CB006BCF6E /* Main.storyboard */,
-				A8716A362B5D13CE006BCF6E /* Assets.xcassets */,
-				A8716A382B5D13CE006BCF6E /* LaunchScreen.storyboard */,
 				A8716A3B2B5D13CE006BCF6E /* Info.plist */,
+				A893610D2B5D74000012C511 /* Controller */,
+				A893610C2B5D73FB0012C511 /* View */,
+				A893610B2B5D73F30012C511 /* Model */,
+				A89361102B5D74CA0012C511 /* Resources */,
+				A893610E2B5D74420012C511 /* Components */,
+				A8716A5F2B5D14D0006BCF6E /* Extensions */,
 			);
 			path = Shedulety;
 			sourceTree = "<group>";
@@ -127,6 +223,136 @@
 			path = SheduletyUITests;
 			sourceTree = "<group>";
 		};
+		A8716A5F2B5D14D0006BCF6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A8716A642B5D14E4006BCF6E /* Array+Shift.swift */,
+				A8716A652B5D14E4006BCF6E /* Date+DateOnly.swift */,
+				A8716A622B5D14E3006BCF6E /* EventDescriptor+DatePeriod.swift */,
+				A8716A632B5D14E4006BCF6E /* Locale+24Hour.swift */,
+				A8716A662B5D14E4006BCF6E /* UIColor+SystemColors.swift */,
+				A8716A602B5D14E3006BCF6E /* Value+Clamped.swift */,
+				A8716A612B5D14E3006BCF6E /* View+StackView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A8716A6E2B5D1553006BCF6E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				A8716A782B5D17F5006BCF6E /* DayHeaderView.swift */,
+				A8716A792B5D17F5006BCF6E /* DaySymbolsView.swift */,
+				A8716A7A2B5D17F6006BCF6E /* SwipeLabelView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		A8716A6F2B5D1563006BCF6E /* Day selector */ = {
+			isa = PBXGroup;
+			children = (
+				A8716A712B5D159D006BCF6E /* DateLabel.swift */,
+				A8716A722B5D159D006BCF6E /* DayDateCell.swift */,
+				A8716A732B5D159E006BCF6E /* DaySelector.swift */,
+				A8716A702B5D159D006BCF6E /* DaySelectorController.swift */,
+			);
+			path = "Day selector";
+			sourceTree = "<group>";
+		};
+		A8716A7E2B5D1867006BCF6E /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				A8716A8A2B5D187C006BCF6E /* AllDayView.swift */,
+				A8716A7F2B5D187A006BCF6E /* CurrentTimeIndicator.swift */,
+				A8716A8E2B5D187D006BCF6E /* Event.swift */,
+				A8716A862B5D187B006BCF6E /* EventDescriptor.swift */,
+				A8716A812B5D187A006BCF6E /* EventEditingSnappingBehavior.swift */,
+				A8716A872B5D187C006BCF6E /* EventLayoutAttributes.swift */,
+				A8716A802B5D187A006BCF6E /* EventResizeHandleDotView.swift */,
+				A8716A882B5D187C006BCF6E /* EventResizeHandleView.swift */,
+				A8716A832B5D187B006BCF6E /* EventView.swift */,
+				A8716A852B5D187B006BCF6E /* ReusePool.swift */,
+				A8716A842B5D187B006BCF6E /* SnapTo15MinuteIntervals.swift */,
+				A8716A8C2B5D187D006BCF6E /* TimelineContainer.swift */,
+				A8716A8B2B5D187D006BCF6E /* TimelineContainerController.swift */,
+				A8716A8D2B5D187D006BCF6E /* TimelinePagerView.swift */,
+				A8716A892B5D187C006BCF6E /* TimelineView.swift */,
+				A8716A822B5D187B006BCF6E /* TimeStringsFactory.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		A8716A9F2B5D1897006BCF6E /* DayView */ = {
+			isa = PBXGroup;
+			children = (
+				A8716AA02B5D18A6006BCF6E /* CalendarStyle.swift */,
+				A8716AA52B5D18A7006BCF6E /* DayView.swift */,
+				A8716AA22B5D18A6006BCF6E /* DayViewController.swift */,
+				A8716AA32B5D18A7006BCF6E /* DayViewState.swift */,
+				A8716AA12B5D18A6006BCF6E /* EventDataSource.swift */,
+				A8716AA42B5D18A7006BCF6E /* Localization.swift */,
+				A8716AAC2B5D18BF006BCF6E /* DatePickerController.swift */,
+			);
+			path = DayView;
+			sourceTree = "<group>";
+		};
+		A893610B2B5D73F30012C511 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A89361072B5D63B30012C511 /* Task.swift */,
+				A8716AAE2B5D190D006BCF6E /* EKWrapper.swift */,
+				A8716AB22B5D32D0006BCF6E /* TaskObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A893610C2B5D73FB0012C511 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8716A312B5D13CB006BCF6E /* CalendarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A893610D2B5D74000012C511 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A89361092B5D643F0012C511 /* CalendarViewModel.swift */,
+				A89361112B5DC0170012C511 /* CalendarService.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A893610E2B5D74420012C511 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A8716A6F2B5D1563006BCF6E /* Day selector */,
+				A8716A9F2B5D1897006BCF6E /* DayView */,
+				A8716A6E2B5D1553006BCF6E /* Header */,
+				A8716A7E2B5D1867006BCF6E /* Timeline */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A89361102B5D74CA0012C511 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8716A382B5D13CE006BCF6E /* LaunchScreen.storyboard */,
+				A8716AB02B5D192E006BCF6E /* tasksTwo.json */,
+				A8716A362B5D13CE006BCF6E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D45DFF22AAFC740837B820D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96ACF523CE05C5B0B150B435 /* Pods_Shedulety.framework */,
+				6EB3D0CD90EC233E67A00186 /* Pods_Shedulety_SheduletyUITests.framework */,
+				E54B7BAE7523DBE2E4E7995E /* Pods_SheduletyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +360,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8716A542B5D13CF006BCF6E /* Build configuration list for PBXNativeTarget "Shedulety" */;
 			buildPhases = (
+				590CE83519896EE5E8B205AA /* [CP] Check Pods Manifest.lock */,
 				A8716A262B5D13CB006BCF6E /* Sources */,
 				A8716A272B5D13CB006BCF6E /* Frameworks */,
 				A8716A282B5D13CB006BCF6E /* Resources */,
+				C6AC0E80A60373EAB33EC1C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +379,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8716A572B5D13CF006BCF6E /* Build configuration list for PBXNativeTarget "SheduletyTests" */;
 			buildPhases = (
+				A0F68726CBE3834652DA0AE7 /* [CP] Check Pods Manifest.lock */,
 				A8716A3C2B5D13CF006BCF6E /* Sources */,
 				A8716A3D2B5D13CF006BCF6E /* Frameworks */,
 				A8716A3E2B5D13CF006BCF6E /* Resources */,
@@ -164,24 +393,6 @@
 			productName = SheduletyTests;
 			productReference = A8716A402B5D13CF006BCF6E /* SheduletyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A8716A492B5D13CF006BCF6E /* SheduletyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A8716A5A2B5D13CF006BCF6E /* Build configuration list for PBXNativeTarget "SheduletyUITests" */;
-			buildPhases = (
-				A8716A462B5D13CF006BCF6E /* Sources */,
-				A8716A472B5D13CF006BCF6E /* Frameworks */,
-				A8716A482B5D13CF006BCF6E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A8716A4C2B5D13CF006BCF6E /* PBXTargetDependency */,
-			);
-			name = SheduletyUITests;
-			productName = SheduletyUITests;
-			productReference = A8716A4A2B5D13CF006BCF6E /* SheduletyUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,10 +408,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					A8716A3F2B5D13CF006BCF6E = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = A8716A292B5D13CB006BCF6E;
-					};
-					A8716A492B5D13CF006BCF6E = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = A8716A292B5D13CB006BCF6E;
 					};
@@ -221,7 +428,6 @@
 			targets = (
 				A8716A292B5D13CB006BCF6E /* Shedulety */,
 				A8716A3F2B5D13CF006BCF6E /* SheduletyTests */,
-				A8716A492B5D13CF006BCF6E /* SheduletyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,8 +438,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8716A3A2B5D13CE006BCF6E /* LaunchScreen.storyboard in Resources */,
+				A8716AB12B5D192E006BCF6E /* tasksTwo.json in Resources */,
 				A8716A372B5D13CE006BCF6E /* Assets.xcassets in Resources */,
-				A8716A352B5D13CB006BCF6E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,23 +450,122 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8716A482B5D13CF006BCF6E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		590CE83519896EE5E8B205AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shedulety-checkManifestLockResult.txt",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		A0F68726CBE3834652DA0AE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SheduletyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6AC0E80A60373EAB33EC1C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shedulety/Pods-Shedulety-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shedulety/Pods-Shedulety-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shedulety/Pods-Shedulety-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8716A262B5D13CB006BCF6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8716A322B5D13CB006BCF6E /* ViewController.swift in Sources */,
+				A8716AAA2B5D18A7006BCF6E /* Localization.swift in Sources */,
+				A8716A982B5D187D006BCF6E /* EventResizeHandleView.swift in Sources */,
+				A8716A9E2B5D187E006BCF6E /* Event.swift in Sources */,
+				A8716A752B5D159E006BCF6E /* DateLabel.swift in Sources */,
+				A8716A7C2B5D17F6006BCF6E /* DaySymbolsView.swift in Sources */,
+				A8716A6D2B5D14E4006BCF6E /* UIColor+SystemColors.swift in Sources */,
+				A8716A7D2B5D17F6006BCF6E /* SwipeLabelView.swift in Sources */,
+				A8716A962B5D187D006BCF6E /* EventDescriptor.swift in Sources */,
+				A8716A9B2B5D187D006BCF6E /* TimelineContainerController.swift in Sources */,
+				A8716A6A2B5D14E4006BCF6E /* Locale+24Hour.swift in Sources */,
+				A8716A672B5D14E4006BCF6E /* Value+Clamped.swift in Sources */,
+				A8716AB32B5D32D0006BCF6E /* TaskObject.swift in Sources */,
+				A8716A922B5D187D006BCF6E /* TimeStringsFactory.swift in Sources */,
+				A89361122B5DC0170012C511 /* CalendarService.swift in Sources */,
+				A8716A322B5D13CB006BCF6E /* CalendarViewController.swift in Sources */,
+				A8716AAD2B5D18BF006BCF6E /* DatePickerController.swift in Sources */,
+				A8716A772B5D159E006BCF6E /* DaySelector.swift in Sources */,
+				A8716A9A2B5D187D006BCF6E /* AllDayView.swift in Sources */,
 				A8716A2E2B5D13CB006BCF6E /* AppDelegate.swift in Sources */,
+				A8716A742B5D159E006BCF6E /* DaySelectorController.swift in Sources */,
+				A8716A7B2B5D17F6006BCF6E /* DayHeaderView.swift in Sources */,
+				A893610A2B5D643F0012C511 /* CalendarViewModel.swift in Sources */,
+				A8716A6B2B5D14E4006BCF6E /* Array+Shift.swift in Sources */,
+				A8716A9C2B5D187E006BCF6E /* TimelineContainer.swift in Sources */,
+				A8716A992B5D187D006BCF6E /* TimelineView.swift in Sources */,
+				A8716A9D2B5D187E006BCF6E /* TimelinePagerView.swift in Sources */,
+				A8716AA62B5D18A7006BCF6E /* CalendarStyle.swift in Sources */,
+				A8716A932B5D187D006BCF6E /* EventView.swift in Sources */,
+				A8716A682B5D14E4006BCF6E /* View+StackView.swift in Sources */,
+				A8716A762B5D159E006BCF6E /* DayDateCell.swift in Sources */,
+				A8716A952B5D187D006BCF6E /* ReusePool.swift in Sources */,
+				A8716AA72B5D18A7006BCF6E /* EventDataSource.swift in Sources */,
+				A8716AAB2B5D18A7006BCF6E /* DayView.swift in Sources */,
+				A8716AA92B5D18A7006BCF6E /* DayViewState.swift in Sources */,
+				A8716A902B5D187D006BCF6E /* EventResizeHandleDotView.swift in Sources */,
+				A8716A972B5D187D006BCF6E /* EventLayoutAttributes.swift in Sources */,
+				A8716A8F2B5D187D006BCF6E /* CurrentTimeIndicator.swift in Sources */,
+				A8716A692B5D14E4006BCF6E /* EventDescriptor+DatePeriod.swift in Sources */,
+				A8716A942B5D187D006BCF6E /* SnapTo15MinuteIntervals.swift in Sources */,
 				A8716A302B5D13CB006BCF6E /* SceneDelegate.swift in Sources */,
+				A8716A6C2B5D14E4006BCF6E /* Date+DateOnly.swift in Sources */,
+				A8716A912B5D187D006BCF6E /* EventEditingSnappingBehavior.swift in Sources */,
+				A89361082B5D63B30012C511 /* Task.swift in Sources */,
+				A8716AAF2B5D190D006BCF6E /* EKWrapper.swift in Sources */,
+				A8716AA82B5D18A7006BCF6E /* DayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +577,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A8716A462B5D13CF006BCF6E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8716A512B5D13CF006BCF6E /* SheduletyUITestsLaunchTests.swift in Sources */,
-				A8716A4F2B5D13CF006BCF6E /* SheduletyUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,22 +585,9 @@
 			target = A8716A292B5D13CB006BCF6E /* Shedulety */;
 			targetProxy = A8716A412B5D13CF006BCF6E /* PBXContainerItemProxy */;
 		};
-		A8716A4C2B5D13CF006BCF6E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A8716A292B5D13CB006BCF6E /* Shedulety */;
-			targetProxy = A8716A4B2B5D13CF006BCF6E /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A8716A332B5D13CB006BCF6E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A8716A342B5D13CB006BCF6E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A8716A382B5D13CE006BCF6E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +715,7 @@
 		};
 		A8716A552B5D13CF006BCF6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBF5CFEBA30DF52572290A4 /* Pods-Shedulety.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,9 +726,9 @@
 				INFOPLIST_FILE = Shedulety/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +744,7 @@
 		};
 		A8716A562B5D13CF006BCF6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49535E7CF6F6E950C826777 /* Pods-Shedulety.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,9 +755,9 @@
 				INFOPLIST_FILE = Shedulety/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,6 +773,7 @@
 		};
 		A8716A582B5D13CF006BCF6E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D1F592B2E3B693106585758 /* Pods-SheduletyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +794,7 @@
 		};
 		A8716A592B5D13CF006BCF6E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93CC42F3F225237C7FAA3C26 /* Pods-SheduletyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,42 +810,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shedulety.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shedulety";
-			};
-			name = Release;
-		};
-		A8716A5B2B5D13CF006BCF6E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YMHC929DBV;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Shedulety.SheduletyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Shedulety;
-			};
-			name = Debug;
-		};
-		A8716A5C2B5D13CF006BCF6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = YMHC929DBV;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Shedulety.SheduletyUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Shedulety;
 			};
 			name = Release;
 		};
@@ -588,15 +839,6 @@
 			buildConfigurations = (
 				A8716A582B5D13CF006BCF6E /* Debug */,
 				A8716A592B5D13CF006BCF6E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A8716A5A2B5D13CF006BCF6E /* Build configuration list for PBXNativeTarget "SheduletyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A8716A5B2B5D13CF006BCF6E /* Debug */,
-				A8716A5C2B5D13CF006BCF6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -201,7 +201,7 @@ public final class TimelinePagerView: UIView, UIGestureRecognizerDelegate, UIScr
   public func create(event: EventDescriptor, animated: Bool) {
     let eventView = EventView()
     eventView.updateWithDescriptor(event: event)
-    addSubview(eventView)
+//    addSubview(eventView)
     // layout algo
     if let currentTimeline = currentTimeline {
       

@@ -44,6 +44,7 @@ public final class EKWrapper: EventDescriptor {
             ekEvent.title = newValue
         }
     }
+    public var description: String
   public var attributedText: NSAttributedString?
   public var lineBreakMode: NSLineBreakMode?
 
@@ -61,18 +62,24 @@ public final class EKWrapper: EventDescriptor {
       updateColors()
     }
   }
-    // public private(set) we can access globaly to ekEvent but we can not set a ekEvent
+ 
     public private(set) var ekEvent: EKEvent
-    public init(eventKitEvent: EKEvent) {
+    public init(eventKitEvent: EKEvent, description: String) {
         self.ekEvent = eventKitEvent
+        self.description = description
         updateColors()
     }
 
   public func makeEditable() -> EKWrapper {
-      let clonned = Self(eventKitEvent: ekEvent)
+      let clonned = Self(eventKitEvent: ekEvent, description: description)
       clonned.editedEvent = self
       return clonned
   }
+
+    public func setEventDescription(_ newDescription: String) {
+            ekEvent.notes = newDescription
+        }
+
 
   public func commitEditing() {
     guard let edited = editedEvent else {return}
@@ -95,4 +102,27 @@ public final class EKWrapper: EventDescriptor {
     backgroundColor = color
     textColor = .white
   }
+}
+import RealmSwift
+
+class RealmConfigurationManager {
+    static let shared = RealmConfigurationManager()
+
+    private init() {
+        configureRealm()
+    }
+
+    func configureRealm() {
+        let config = Realm.Configuration(
+            schemaVersion: 1,
+            migrationBlock: { migration, oldSchemaVersion in
+                if (oldSchemaVersion < 1) {
+                    migration.enumerateObjects(ofType: TaskObject.className()) { oldObject, newObject in
+                        newObject!["descriptionTask"] = ""
+                    }
+                }
+            })
+
+        Realm.Configuration.defaultConfiguration = config
+    }
 }

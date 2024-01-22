@@ -1,6 +1,6 @@
 //
 //  View+StackView.swift
-//  CalendarKit
+//  
 //
 //  Created by Erick Sanchez on 5/10/18.
 //

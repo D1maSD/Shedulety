@@ -16,12 +16,11 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
 
     //EKEventEditViewDelegate need to edit created events (on creating moment)
     private let eventStore = EKEventStore()
-    var calendarViewModel = CalendarViewModel()
+    var calendarViewModel: CalendarViewModelProtocol
     override func viewDidLoad() {
-        print("1: viewDidLoad")
         super.viewDidLoad()
-//        getDeskriptors()
-        title = "Calendar"
+        title = "Shedulety"
+        navigationController?.navigationBar.isTranslucent = false
         requestAccessToCalendar()
     }
 
@@ -57,7 +56,6 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
         }
     }
 
-
     override func eventsForDate(_ date: Date) -> [EventDescriptor] {
         print("2: eventsForDate")
 
@@ -71,6 +69,7 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
             return
         }
         let ekEvent = ckEvent.ekEvent
+        ckEvent.setEventDescription(ckEvent.description)
         presentDetailView(ekEvent)
     }
 
@@ -110,10 +109,19 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
         print("7: eventEditViewController")
             endEventEditing()
             if action != .canceled {
-                // Добавляем созданный ивент из контроллера редактирования в массив generatedEvents
+
                 if let ekEvent = controller.event {
-                    let ekWrapper = EKWrapper(eventKitEvent: ekEvent)
+                    let ekWrapper = EKWrapper(eventKitEvent: ekEvent, description: ekEvent.notes ?? "Notes")
+                    ekWrapper.setEventDescription(ekWrapper.description)
+                    print("7: eventEditViewController append")
                     calendarViewModel.generatedEvents.append(ekWrapper)
+                    // Добавляем событие в Realm
+                    let taskObject = TaskObject()
+                    taskObject.name = ekWrapper.text
+                    taskObject.descriptionTask = ekWrapper.description
+                    taskObject.dateStart = ekWrapper.startDate
+                    taskObject.dateFinish = ekWrapper.endDate
+                    calendarViewModel.saveTaskToRealm(taskObject: taskObject)
                 }
                 DispatchQueue.main.async {
                     self.reloadData()
@@ -138,14 +146,15 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
 
         let endDate = calendar.date(byAdding: oneHourComponents, to: date)
 
-        let newEKWrapper = EKWrapper(eventKitEvent: ekEvent)
+        let newEKWrapper = EKWrapper(eventKitEvent: ekEvent, description: "New Event description")
         newEKWrapper.editedEvent = newEKWrapper
         newEKWrapper.startDate = date
         newEKWrapper.endDate = endDate ?? Date()
         newEKWrapper.text = "New Event"
-        calendarViewModel.generatedEvents.append(newEKWrapper)
-
         create(event: newEKWrapper, animated: true)
+        DispatchQueue.main.async {
+            self.reloadData()
+        }
     }
 
     private func presentDetailView(_ ekEvent: EKEvent) {
@@ -154,7 +163,5 @@ class CalendarViewController: DayViewController, EKEventEditViewDelegate {
         eventViewController.allowsCalendarPreview = true
         eventViewController.allowsEditing = true
         navigationController?.pushViewController(eventViewController, animated: true)
-        print("Event clicked")
     }
-///////////FROM REALM
 }
