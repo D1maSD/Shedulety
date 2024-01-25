@@ -5,6 +5,9 @@ You also can create new task and that task will be saved to local storage automa
 
 If you wanna add a new task just long press to screen and you will see a event settings screen, then just tap "add" and your event adds to a shedule screen. App flow you can see on screenshots below.
 
+P.S. 
+Допустил ошибку в нейминге calendarViewModel и CalendarViewModelProtocol, должно быть calendarController и CalendarControllerProtocol так как архитектура MVC. Вносить изменения в код пока не буду, чтобы не нарушать условия выполнения тестового задания до 22 января. Ниже скриншоты из приложения.
+
 
 <img width="272" alt="image" src="https://github.com/D1maSD/Shedulety/assets/93784266/6b69d1ed-8013-4d86-a1bc-34efed934e60">
 <img width="272" alt="image" src="https://github.com/D1maSD/Shedulety/assets/93784266/0f7faf56-21ef-4bc1-893f-5b738eb20010">
